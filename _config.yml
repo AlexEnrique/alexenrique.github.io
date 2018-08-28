@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Your Name / Site Title"
+title                    : "Alex / Alex's site"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "Alex Enrique Crispim"
+description              : &description "Undergraduated student at Federal University of ABC (UFABC) - Brazil"
+url                      : https://alexenrique.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "AlexEnrique/alexenrique.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -27,8 +27,8 @@ comments:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
     appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    num_posts            :5 # 5 (default)
+    colorscheme          :"dark" # "light" (default), "dark"
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
   branch                 : "gh-pages" # "master", "gh-pages"
@@ -79,13 +79,13 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Sidebar Name"
+  name             : "Alex Enrique"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
+  bio              : "Undergraduated student"
+  location         : "Federal University of ABC - Brazil"
   employer         :
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
+  googlescholar    : "..."
+  email            : "alex.enrique@aluno.ufabc.edu.br"
   uri              :
   bitbucket        :
   codepen          :
@@ -93,7 +93,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : "AlexEnrique"
   google_plus      :
   keybase          :
   instagram        :
@@ -207,7 +207,7 @@ defaults:
   # _teaching
   - scope:
       path: ""
-      type: teaching
+      type: Teaching
     values:
       layout: single
       author_profile: true
