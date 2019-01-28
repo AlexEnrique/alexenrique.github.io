@@ -1,10 +1,9 @@
 function setup() {
-  noCanvas();
-  // loadFile();
+  noCanvas(); // needed because we're using the p5.js framework
   pageLoaded();
 }
 
-function pageLoaded() {
+function pageLoaded() { // callend at the begining
   loadStrings("./../data-texts/coffee.txt", function(data) {
     document.getElementById("title").innerHTML = data[0];
     paragraph = document.getElementById("test");
@@ -18,7 +17,7 @@ function pageLoaded() {
         // add text
         paragraph.innerHTML += data[i].substring(0, lastSpaceIndex) + " ...";
 
-        // add Button read
+        // add Button read -- just a test
         paragraph.innerHTML += "\n<button type=\"button\" name=\"button\" style=\"float:right;\" id=\"read\">Read More</button>";
         document.getElementById("read").onclick = loadFile;
 
@@ -29,7 +28,7 @@ function pageLoaded() {
 }
 
 
-function fileLoaded(data) {
+function fileLoaded(data) { // for now, called after the "read more" button has been cicked... Change this to a new page
   $(document).ready(function() {
     $("#read").hide();
   })
