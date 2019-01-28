@@ -5,6 +5,8 @@
 html {
   margin: -7px;
   padding: -7px;
+  height: 100%;
+  width: 100%;
 }
 
 body {
@@ -12,6 +14,10 @@ body {
   font-size: 12pt;
   margin-bottom: 10px;
   background-color: #b3b3b3;
+
+  padding: 0;
+  margin: 7.48px;
+  width: 100%;
 }
 
 p {
@@ -19,8 +25,33 @@ p {
   margin: 0;
 }
 
+button {
+  background-color: #4d94ff;
+  font-size: 10pt;
+  border-radius: 5px;
+  padding: 12px 25px;
+  cursor: pointer;
+  color: #000;
+  border: none;
+  outline: none;
+  margin-top: 27px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #80b3ff;
+}
+
+#main-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 0 0 100px;
+  position: relative;
+}
+
 header {
-  /* background-image: url("./../imgs/header.jpg"); */
+  background-image: url("./../imgs/header.jpg");
   background-position: center;
   background-size: 800px;
 
@@ -83,8 +114,8 @@ article {
 }
 
 article .inside {
-  padding-left: 15px;
-  padding-right: 20px;
+  padding-left: 25px;
+  padding-right: 30px;
 }
 
 section {
@@ -100,15 +131,18 @@ section {
 section img {
   float: left;
   width: 24%;
+  margin: -3px;
+  padding-right: 15px;
   /* height: 100px; */
 }
 
 section p {
   text-align: justify;
+  font-family: serif;
   color: #080808;
 
   float: left;
-  width: 70%;
+  width: 74%;
   padding-left: 10px;
   /* height: 100px; */
 }
@@ -120,4 +154,10 @@ footer {
   padding-bottom: 5px;
   margin-bottom: -20px;
   background-color: #f2f2f2;
+
+  /* bottom: 0;
+  height: 100px;
+  left: 0;
+  position: absolute;
+  width: 100%; */
 }
