@@ -1,0 +1,20 @@
+/* Separing in two columns the main part, i.e. nav and article */
+.column1 {
+  float: left;
+  width: 15%;
+  height: var(--article-height);
+}
+
+.column2 {
+  text-align: justify;
+  float: left;
+  width: 84.15%;
+  padding-left: 10px;
+  height: var(--article-height);
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
